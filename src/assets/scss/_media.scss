@@ -1,0 +1,55 @@
+@media (max-width:576px) {
+
+    .LoginSection{
+        display: block !important;
+        background-image: none;
+    }
+
+    .LoginCustonCard {
+        width: 100% !important;
+        padding: 9px 0px !important;
+        box-shadow: none !important;
+        min-height: 60vh;
+    }
+
+    .DesktopSection{
+        display: none;
+    }
+
+
+    .LaptopSection{
+        min-height: 39vh;
+        width: 100%;
+        background-image: url(/public/img/login-bg-1.svg);
+        background-position-x: -120%;
+        border-bottom-left-radius: 88px;
+        display: block;
+    }
+    .LoginTitle{
+        margin-bottom: 21px !important;
+        margin-top: 9px;
+        text-align: left !important;
+        font-size: 19px;
+    }
+    .LoginCustonCard{
+        .card-body{
+            display: flex !important;
+            align-items: center !important;
+            position: relative;
+
+
+
+            div{
+                width: 100%;
+                .LoginBtn {
+                    position: absolute;
+                    bottom: 0%;
+                    width: 92% !important;
+                }
+
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,205 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "email": "login@gmail.com",
+      "password": 12345
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "email": "login@gmail.com",
+      "password": "12345",
+      "id": 8
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "projectname": "Booking",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 3,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 4,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 5,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 6,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 7,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 8,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "cancelled"
+    },
+    {
+      "id": 9,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "running"
+    },
+    {
+      "id": 10,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "running"
+    },
+    {
+      "id": 11,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "running"
+    },
+    {
+      "id": 12,
+      "projectname": "line filter",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "running"
+    },
+    {
+      "id": 12,
+      "projectname": "book",
+      "reason": "business",
+      "type": "internal",
+      "divison": "compressor",
+      "category": "quality a",
+      "priority": "high",
+      "department": "finance",
+      "location": "pune",
+      "status": "running"
+    }
+  ],
+  "projectlist": [
+    {
+      "projectTheme": "dfsdgfdgf dfgdhdgh",
+      "reason": "Business",
+      "type": "External",
+      "divison": "Filters",
+      "category": "Quality C",
+      "priority": "Low",
+      "department": "Finance",
+      "startDate": "2024-04-26",
+      "endDate": "2024-05-29",
+      "location": "pune",
+      "id": 1
+    }
+  ]
+}

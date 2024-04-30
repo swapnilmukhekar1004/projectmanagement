@@ -1,0 +1,39 @@
+
+
+
+aside{
+    background: #fff;
+    width: 5%;
+    min-height: 100vh;
+    box-shadow: #dfe3e8 0px 3px 8px !important;
+    position: fixed;
+}
+
+.NavigationWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    ul{
+        list-style-type: none;
+        padding-left: 0px !important;
+        li{
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+    }
+}
+.unActive{
+    a{
+        color: gray !important;
+    }
+}
+
+
+
+.activePage{
+    a{
+        color: $primary !important;
+    }
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+//files
+@import 'variable.scss';
+@import 'common.scss';
+
+
+
+
+//auth section
+@import 'auth/login';
+
+//pages
+@import 'pages/dashboard';
+@import 'pages/projectlisting';
+
+
+
+
+
+//common
+@import 'common/sidebar';
+
+
+//responsive files
+@import 'media.scss';
