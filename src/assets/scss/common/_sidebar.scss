@@ -18,9 +18,28 @@ aside{
     ul{
         list-style-type: none;
         padding-left: 0px !important;
+
+     
         li{
-            margin-bottom: 20px;
-            font-size: 22px;
+            margin-bottom: 40px;
+            font-size: 26px;
+
+            &:nth-child(2) {
+                position: relative;
+                 &::before{
+                    content: " ";
+                    position: absolute;
+                    bottom: -75%;
+                    left: -5px;
+                    height: 0.9px;
+                    width: 36px;
+                    background: grey;
+                 }
+    
+              }
+    
+    
+            
         }
     }
 }
@@ -35,5 +54,53 @@ aside{
 .activePage{
     a{
         color: $primary !important;
+        position: relative;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: -25px;
+            top: 4px;
+            height: 35px;
+            /* border-radius: 50px; */
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+            width: 6px;
+            background-color: #0a3d89;
+        
+          }
+     
     }
+  
+
+
+}
+
+
+
+.bottomNavWrapper{
+
+    display: none;
+
+    ul{
+        list-style-type: none;
+        padding-left: 0px !important;
+        li{
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+    }
+
+}
+
+.MobileSection {
+    display: none;
+}
+
+.desk-logout{
+    position: absolute;
+    bottom: 16%;
+    left: 38%;
+    color: grey;
+    font-size: 26px;
 }

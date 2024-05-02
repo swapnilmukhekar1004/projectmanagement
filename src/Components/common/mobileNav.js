@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa6";
+import { MdLogout } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
 
-export default function Header() {
+export default function MobileNav() {
   const location = useLocation();
   const pathName = location.pathname;
 
@@ -24,19 +25,19 @@ export default function Header() {
     }
   };
 
+
+
   return (
     <>
-      <nav className="desktopNav">
-        <div className="row">
-          <div className="col-lg-6">
-            <div
-              className="d-flex justify-content-between align-items-center"
-              style={{ marginTop: "6%" }}
-            >
-              <h5 className="text-white"><Link to="/"><FaAngleLeft className="text-white" /></Link> <span style={{marginLeft:"18px"}}>{renderBreadcrumbText()}</span></h5>
-
-              <img src="img/Logo.svg" alt="logo"></img>
+      {/* mobile navbar start here */}
+      <nav className="MobileNav">
+        <div className="container-fluid">
+          <div className="d-flex justify-content-between align-items-center WrapSection">
+            <div>
+              <h5 className="text-white" style={{fontSize:"18px", marginBottom:"0px"}}> {<FaAngleLeft  />} <span style={{marginLeft:"18px"}}>{renderBreadcrumbText()}</span></h5>
             </div>
+
+            <div> <h5 className="text-white" style={{fontSize:"28px"}}><Link to={"/login"} className="text-white"><MdLogout /></Link></h5> </div>
           </div>
         </div>
       </nav>

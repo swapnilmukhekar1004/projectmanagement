@@ -1,24 +1,22 @@
-
 import React from 'react';
 import { AiOutlineDashboard } from "react-icons/ai";
 import { FaList } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6";
 import { IoMdAdd } from "react-icons/io"
 import { Link, useLocation } from 'react-router-dom';
-import { MdLogout } from "react-icons/md";
 
-export default function Sidebar() {
+export default function BottomNav() {
   const location = useLocation();
 
   const Navigation = [
     { path: "/", icon: <AiOutlineDashboard /> },
-    { path: "/projectListing", icon: <FaList /> },
-    { path: "/createProject", icon: <IoMdAdd /> }
+    { path: "/createProject", icon: <IoMdAdd/> },
+    { path: "/projectListing", icon: <FaList /> }
+   
   ];
 
   return (
-    <aside>
-      <div className='NavigationWrapper'>
+
+      <div className='bottomNavWrapper'>
         <ul>
           {Navigation.map(navItem => (
             <li key={navItem.path} className={location.pathname === navItem.path ? 'activePage' : 'unActive'}>
@@ -27,10 +25,7 @@ export default function Sidebar() {
           ))}
         </ul>
       </div>
-      <Link to={"/login"} className=" desk-logout"><MdLogout /></Link>
-
-
-    </aside>
+   
   );
 }
 

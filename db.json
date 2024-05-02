@@ -52,7 +52,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "running",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 3,
@@ -64,7 +66,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "closed",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 4,
@@ -76,7 +80,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "closed",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 5,
@@ -88,7 +94,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "closed",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 6,
@@ -100,7 +108,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "running",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 7,
@@ -112,7 +122,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "cancelled",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 8,
@@ -124,7 +136,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled"
+      "status": "closed",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 9,
@@ -136,7 +150,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running"
+      "status": "cancelled",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 10,
@@ -148,7 +164,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running"
+      "status": "cancelled",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 11,
@@ -160,7 +178,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running"
+      "status": "running",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
       "id": 12,
@@ -172,10 +192,12 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running"
+      "status": "running",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     },
     {
-      "id": 12,
+      "id": 13,
       "projectname": "book",
       "reason": "business",
       "type": "internal",
@@ -184,7 +206,9 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running"
+      "status": "running",
+      "startDate": "jun-21,2020",
+      "endDate": "july-19,2020"
     }
   ],
   "projectlist": [
@@ -200,6 +224,19 @@
       "endDate": "2024-05-29",
       "location": "pune",
       "id": 1
+    },
+    {
+      "projectTheme": "dsdsds",
+      "reason": "Business",
+      "type": "Internal",
+      "divison": "Filters",
+      "category": "Quality A",
+      "priority": "Medium",
+      "department": "Finance",
+      "startDate": "2024-05-25",
+      "endDate": "2024-05-29",
+      "location": "pune",
+      "id": 2
     }
   ]
 }

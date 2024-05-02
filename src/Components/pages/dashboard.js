@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,useEffect, useRef  } from "react";
 import axios from "axios";
-
-import ProjectBarGraph from "./projectbargraph";
+import Graph from "./Graph";
 
 export default function Dashboard() {
   const [projects, setProjects] = useState([]);
@@ -59,7 +58,7 @@ export default function Dashboard() {
       <div>
         <div>
           <div className="MainContent">
-            <div className="row">
+            <div className="row DashobarCustomRow">
               <div className="col-lg-3 custom-col">
                 <div className="card DCard ">
                   <div className="card-body card-shadow ">
@@ -115,14 +114,21 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* <div className="card">
+            <div className="row mt-4">
+              <div className="col-lg-6">
+                <p style={{fontSize:"21px"}}>Department wise - Total Vs Closed</p>
+              <div className="card">
                 <div className="card-body">
-                <ProjectBarGraph projects={projects} />
+                 {/* <Graph/> */}
 
 
                 </div>
 
-            </div> */}
+            </div>
+
+              </div>
+
+            </div>
         </div>
       </div>
     </>

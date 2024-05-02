@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: rgba(229, 236, 248, 0.5490196078);
+}
+
 .form-label {
   color: #797c7e !important;
 }
@@ -99,8 +103,58 @@
   border-color: red !important;
 }
 
+.text-red {
+  color: red !important;
+}
+
 .errorLine {
   font-size: 13px;
+}
+
+.MobileNav {
+  display: none;
+}
+
+.WrapSection {
+  height: 70px;
+}
+
+/* Bottom Popup Styles */
+.bottom-popup-container {
+  position: relative;
+}
+
+.bottom-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Optional: Add box shadow for better visual */
+  transition: transform 0.3s ease-in-out; /* Fade effect */
+  transform: translateY(100%);
+}
+
+.popup-content {
+  padding: 20px;
+}
+
+/* Show popup when isOpen state is true */
+.bottom-popup.open {
+  transform: translateY(0);
+}
+
+.PasswordInput {
+  position: relative !important;
+}
+
+.pass-eys-icon {
+  position: absolute !important;
+  right: 0%;
+  top: 10%;
+  border: none;
+  /* box-shadow: none !important; */
+  font-size: 18px;
 }
 
 .w-5 {
@@ -195,7 +249,7 @@
   border-bottom-width: 0 !important;
   font-size: 14px !important;
   background-color: rgba(13, 110, 253, 0.0784313725) !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 .custom-table td {
   text-transform: capitalize !important;
@@ -229,6 +283,61 @@
   border-radius: 0px !important;
 }
 
+.NameText {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.DateMbl {
+  color: gray;
+  font-size: 15px;
+}
+
+.InformSection p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.GreyText {
+  color: gray;
+}
+
+.DarkText {
+  color: #555353;
+}
+
+.BtnCsm {
+  width: 80px !important;
+}
+
+.MblCardSection {
+  margin-top: -4px;
+  display: none;
+}
+
+.filterSection {
+  position: relative;
+}
+
+.BarIcon {
+  font-size: 25px;
+  position: absolute;
+  right: 1%;
+  top: 45%;
+  color: grey;
+}
+
+.SortSection {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 50px;
+}
+.SortSection li {
+  margin-bottom: 36px;
+  font-size: 17px;
+}
+
 aside {
   background: #fff;
   width: 5%;
@@ -248,8 +357,20 @@ aside {
   padding-left: 0px !important;
 }
 .NavigationWrapper ul li {
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+.NavigationWrapper ul li:nth-child(2) {
+  position: relative;
+}
+.NavigationWrapper ul li:nth-child(2)::before {
+  content: " ";
+  position: absolute;
+  bottom: -75%;
+  left: -5px;
+  height: 0.9px;
+  width: 36px;
+  background: grey;
 }
 
 .unActive a {
@@ -258,12 +379,145 @@ aside {
 
 .activePage a {
   color: #0a3d89 !important;
+  position: relative;
+}
+.activePage a::before {
+  content: " ";
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  height: 35px;
+  /* border-radius: 50px; */
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  width: 6px;
+  background-color: #0a3d89;
 }
 
+.bottomNavWrapper {
+  display: none;
+}
+.bottomNavWrapper ul {
+  list-style-type: none;
+  padding-left: 0px !important;
+}
+.bottomNavWrapper ul li {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.MobileSection {
+  display: none;
+}
+
+.desk-logout {
+  position: absolute;
+  bottom: 16%;
+  left: 38%;
+  color: grey;
+  font-size: 26px;
+}
+
+@media (max-width: 991px) {
+  aside {
+    display: none;
+  }
+  .MblCardSection {
+    display: block;
+  }
+  .OutletSection {
+    width: 100%;
+    padding-bottom: 110px;
+    margin-left: 0%;
+    margin-top: 85px;
+  }
+  .TableSection {
+    display: none;
+  }
+  .bottomNavWrapper {
+    display: block;
+  }
+  .bottomNavWrapper ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    background: #fff;
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
+    box-shadow: rgba(103, 155, 232, 0.4784313725) 0px 3px 8px !important;
+  }
+  .bottomNavWrapper ul li {
+    margin-bottom: 0px;
+  }
+  .BottomNavigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0%;
+    padding: 0px;
+  }
+  .customRow {
+    --bs-gutter-x: 0rem !important;
+  }
+  .desktopNav {
+    display: none;
+  }
+  .CommonPageLayout {
+    background: none;
+  }
+  .MobileNav {
+    display: block;
+    background-image: url(/public/img/Header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  .activePage a::before {
+    left: 35%;
+    top: 86%;
+    transform: rotate(270deg);
+  }
+  .SearchTable {
+    background: none !important;
+    margin-bottom: 20px;
+    width: 50% !important;
+  }
+}
+@media (max-width: 772px) {
+  .LoginBtn {
+    width: 100% !important;
+    margin-top: 28px;
+  }
+  .DashobarCustomRow {
+    flex-wrap: nowrap !important;
+    overflow: auto !important;
+  }
+  .DashobarCustomRow .card {
+    border-radius: 4px !important;
+    height: 78px !important;
+  }
+  .DashobarCustomRow .card .card-body {
+    border-radius: 4px !important;
+  }
+  .custom-col {
+    width: 147px !important;
+  }
+  .DCard h2 {
+    font-size: 23px;
+  }
+}
 @media (max-width: 576px) {
+  .SearchTable {
+    background: none !important;
+    width: 75% !important;
+  }
   .LoginSection {
     display: block !important;
     background-image: none;
+    background-color: #fff !important;
   }
   .LoginCustonCard {
     width: 100% !important;
@@ -274,13 +528,14 @@ aside {
   .DesktopSection {
     display: none;
   }
-  .LaptopSection {
+  .MobileSection {
     min-height: 39vh;
     width: 100%;
     background-image: url(/public/img/login-bg-1.svg);
     background-position-x: -120%;
     border-bottom-left-radius: 88px;
     display: block;
+    position: relative;
   }
   .LoginTitle {
     margin-bottom: 21px !important;

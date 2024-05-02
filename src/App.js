@@ -157,12 +157,94 @@
 // export default App;
 
 // App.js
-import React, { useState } from "react";
+// import React, { useState } from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Navigate,
+//   useNavigate
+// } from "react-router-dom";
+// import Login from "./Components/auth/login";
+
+// import Dashboard from "./Components/pages/dashboard";
+// import CreateProject from "./Components/pages/createproject";
+// import Projectlisting from "./Components/pages/projectlisting";
+// import Layout from "./Components/layout";
+
+// const App = () => {
+//   const [loggedIn, setLoggedIn] = useState(false);
+//   // const navigate = useNavigate();
+
+
+//   const handleLogin = (email, password, ) => {
+   
+//     const users = [
+//       { email: 'ss@gmail.com', password: 'ss', id: 1 },
+//       // Add more users if needed
+//     ];
+
+//     const user = users.find(u => u.email === email && u.password === password);
+
+//     if (user) {
+//       setLoggedIn(true);
+//       // Navigate('/create-project');
+//     } else {
+//       alert('Invalid username or password');
+//     }
+//   };
+
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Routes>
+//           <Route path="/login" element={<Login onLogin={handleLogin} />} />
+//           <Route
+//             path="/"
+//             element={
+//               loggedIn ? (
+//                 <AuthenticatedRoutes />
+//               ) : (
+//                 <Navigate to="/login" />
+//               )
+//             }
+//           />
+//         </Routes>
+//       </div>
+//     </Router>
+
+//     // <AuthenticatedRoutes />
+//   );
+// };
+
+// const AuthenticatedRoutes = () => {
+//   return (
+//     <>
+//       <Router>
+        
+//           <Routes>
+//             <Route path="/" element={<Layout />}>
+//               <Route index element={<Dashboard />} />
+//               <Route path="createProject" element={<CreateProject />} />
+//               <Route path="projectListing" element={<Projectlisting />} />
+//             </Route>
+//             <Route path="/login" element={<Login />} />
+//           </Routes>
+       
+//       </Router>
+//     </>
+//   );
+// };
+
+// export default App;
+
+
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
+  Route
+  
 } from "react-router-dom";
 import Login from "./Components/auth/login";
 
@@ -172,43 +254,9 @@ import Projectlisting from "./Components/pages/projectlisting";
 import Layout from "./Components/layout";
 
 const App = () => {
-  // const [loggedIn, setLoggedIn] = useState(false);
-
-  // const handleLogin = (email, password, navigate) => {
-  //   const users = [
-  //     { email: 'ss@gmail.com', password: 'ss', id: 1 },
-  //     // Add more users if needed
-  //   ];
-
-  //   const user = users.find(u => u.email === email && u.password === password);
-
-  //   if (user) {
-  //     setLoggedIn(true);
-  //     navigate('/create-project');
-  //   } else {
-  //     alert('Invalid username or password');
-  //   }
-  // };
+ 
 
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Routes>
-    //       <Route path="/login" element={<Login onLogin={handleLogin} />} />
-    //       <Route
-    //         path="/"
-    //         element={
-    //           loggedIn ? (
-    //             <AuthenticatedRoutes />
-    //           ) : (
-    //             <Navigate to="/login" />
-    //           )
-    //         }
-    //       />
-    //     </Routes>
-    //   </div>
-    // </Router>
-
     <AuthenticatedRoutes />
   );
 };
@@ -217,16 +265,14 @@ const AuthenticatedRoutes = () => {
   return (
     <>
       <Router>
-        
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Dashboard />} />
-              <Route path="createProject" element={<CreateProject />} />
-              <Route path="projectListing" element={<Projectlisting />} />
-            </Route>
-            <Route path="/login" element={<Login />} />
-          </Routes>
-       
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="createProject" element={<CreateProject />} />
+            <Route path="projectListing" element={<Projectlisting />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </Router>
     </>
   );
