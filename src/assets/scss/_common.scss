@@ -132,6 +132,51 @@ color: $grey !important;
     height: 70px;
 }
 
+.graph-detail-section{
+    font-size: 13px;
+    
+    .blue-mark{
+        span{
+           position: relative;
+
+           &::before{
+            content: " ";
+            position: absolute;
+            min-height: 7px !important;
+            min-width: 7px !important;
+            background: #0a3d89;
+            border-radius: 50%;
+            left: -50%;
+            top: 41%;
+           }
+        }
+
+
+    }
+
+    .green-mark{
+        span{
+           position: relative;
+
+           &::before{
+            content: " ";
+            position: absolute;
+            min-height: 7px !important;
+            min-width: 7px !important;
+            background: #1da436;
+            border-radius: 50%;
+            left: -50%;
+            top: 41%;
+           }
+        }
+
+
+    }
+}
+
+.departmentWiseName{
+    font-size: 21px;
+}
 
 
 
@@ -176,7 +221,24 @@ color: $grey !important;
 
 
 
+//graph section
 
+.chartCard{
+    height: 370px !important;
+   
+}
+
+
+.PieChartsCard{
+    display: flex !important;
+    justify-content: cente !important;
+    align-items: center !important;
+   
+    canvas{
+        height: 300px !important;
+        width: 300px !important;
+    }
+}
 
 
 

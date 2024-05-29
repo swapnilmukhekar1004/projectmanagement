@@ -130,7 +130,9 @@ export default function Projectlisting() {
                         ></input>
 
                         <div>
-                          <label htmlFor="sort" className="text-secondary">Sort By:</label>
+                          <label htmlFor="sort" className="text-secondary">
+                            Sort By:
+                          </label>
                           <select
                             id="sort"
                             onChange={(e) => handleSortChange(e.target.value)}
@@ -258,51 +260,68 @@ export default function Projectlisting() {
                         <p className="NameText">{item.status}</p>
                       </div>
                       <span className="DateMbl">
-                        jun-21,2020 to jan-01,2020
+                        <span>{item.startDate}</span>{" "}
+                        <span className="text-lowercase">to</span>{" "}
+                        <span>{item.endDate}</span>
                       </span>
 
                       <div className="mt-3 InformSection">
                         <p>
                           <span className="GreyText">
-                            Reason:<span className="DarkText">Business</span>
+                            Reason:
+                            <span className="DarkText">{item.reason}</span>
                           </span>
                         </p>
                         <p className="d-flex">
                           <span className="GreyText">
-                            Type:<span className="DarkText">Internal</span>{" "}
+                            Type:<span className="DarkText">{item.type}</span>{" "}
                           </span>
                           <span>
                             <li className="GreyText ms-3">
                               Category:
-                              <span className="DarkText">Quality A</span>
+                              <span className="DarkText">{item.category}</span>
                             </li>
                           </span>
                         </p>
                         <p className="d-flex">
                           <span className="GreyText">
-                            Div:<span className="DarkText">Compressor</span>{" "}
+                            Div:
+                            <span className="DarkText">{item.divison}</span>{" "}
                           </span>
                           <span>
                             <li className="GreyText ms-3">
-                              Dept:<span className="DarkText">Strategy</span>
+                              Dept:
+                              <span className="DarkText">
+                                {item.department}
+                              </span>
                             </li>
                           </span>
                         </p>
                         <p>
                           <span className="GreyText">
-                            Location:<span className="DarkText">Pune</span>{" "}
+                            Location:
+                            <span className="DarkText">{item.location}</span>{" "}
                           </span>
                         </p>
                       </div>
 
                       <div className="d-flex justify-content-between mt-4">
-                        <button className="btn btn-outline-primary m-1 BtnCsm">
+                        <button
+                          className="btn btn-outline-primary m-1 BtnCsm"
+                          onClick={() => updateStatus(item.id, "running")}
+                        >
                           Start
                         </button>
-                        <button className="btn btn-outline-primary m-1  BtnCsm">
+                        <button
+                          className="btn btn-outline-primary m-1  BtnCsm"
+                          onClick={() => updateStatus(item.id, "closed")}
+                        >
                           Close
                         </button>
-                        <button className="btn btn-outline-primary m-1  BtnCsm">
+                        <button
+                          className="btn btn-outline-primary m-1  BtnCsm"
+                          onClick={() => updateStatus(item.id, "cancelled")}
+                        >
                           Cancel
                         </button>
                       </div>

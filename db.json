@@ -45,14 +45,14 @@
     {
       "id": 1,
       "projectname": "Booking",
-      "reason": "business",
+      "reason": "total",
       "type": "internal",
       "divison": "compressor",
       "category": "quality a",
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "running",
+      "status": "closed",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -66,7 +66,7 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "closed",
+      "status": "running",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -80,7 +80,7 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "closed",
+      "status": "cancelled",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -94,7 +94,7 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "closed",
+      "status": "cancelled",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -106,9 +106,9 @@
       "divison": "compressor",
       "category": "quality a",
       "priority": "high",
-      "department": "finance",
+      "department": "store",
       "location": "pune",
-      "status": "running",
+      "status": "closed",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -120,9 +120,9 @@
       "divison": "compressor",
       "category": "quality a",
       "priority": "high",
-      "department": "finance",
+      "department": "store",
       "location": "pune",
-      "status": "cancelled",
+      "status": "closed",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -134,7 +134,7 @@
       "divison": "compressor",
       "category": "quality a",
       "priority": "high",
-      "department": "finance",
+      "department": "new",
       "location": "pune",
       "status": "closed",
       "startDate": "jun-21,2020",
@@ -150,7 +150,7 @@
       "priority": "high",
       "department": "finance",
       "location": "pune",
-      "status": "cancelled",
+      "status": "closed",
       "startDate": "jun-21,2020",
       "endDate": "july-19,2020"
     },
@@ -237,6 +237,71 @@
       "endDate": "2024-05-29",
       "location": "pune",
       "id": 2
+    },
+    {
+      "projectTheme": "new details",
+      "reason": "Transport",
+      "type": "External",
+      "divison": "Pumps",
+      "category": "Quality B",
+      "priority": "Low",
+      "department": "select department",
+      "startDate": "2024-05-23",
+      "endDate": "2024-05-31",
+      "location": "mumbai",
+      "id": 3
+    },
+    {
+      "projectTheme": "demo",
+      "reason": "Transport",
+      "type": "External",
+      "divison": "Pumps",
+      "category": "Quality B",
+      "priority": "Medium",
+      "department": "Finance",
+      "startDate": "2024-05-03",
+      "endDate": "2024-05-22",
+      "location": "mumbai",
+      "id": 4
+    },
+    {
+      "projectTheme": "dsds",
+      "reason": "Business",
+      "type": "External",
+      "divison": "Pumps",
+      "category": "Quality C",
+      "priority": "Medium",
+      "department": "Finance",
+      "startDate": "2024-05-04",
+      "endDate": "2024-05-01",
+      "location": "pune",
+      "id": 5
+    },
+    {
+      "projectTheme": "sdsds",
+      "reason": "Business",
+      "type": "External",
+      "divison": "Pumps",
+      "category": "Quality C",
+      "priority": "High",
+      "department": "Maintenance",
+      "startDate": "2024-05-09",
+      "endDate": "2024-05-23",
+      "location": "pune",
+      "id": 6
+    },
+    {
+      "projectTheme": "sdsdsd",
+      "reason": "Transport",
+      "type": "External",
+      "divison": "Filters",
+      "category": "Quality C",
+      "priority": "High",
+      "department": "Maintenance",
+      "startDate": "2024-05-03",
+      "endDate": "2024-05-06",
+      "location": "mumbai",
+      "id": 7
     }
   ]
 }

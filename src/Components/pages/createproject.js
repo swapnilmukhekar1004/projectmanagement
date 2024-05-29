@@ -2,6 +2,10 @@ import React, { useState,useEffect } from "react";
 import axios from "axios";
 
 export default function CreateProject() {
+
+  const[newerror , setNewerror] = useState(true);
+
+
   const [formData, setFormData] = useState({
     projectTheme: "",
     reason: "",
@@ -16,24 +20,7 @@ export default function CreateProject() {
   });
 
   const [errors, setErrors] = useState({});
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 991);
-    };
-
-    // Initial check on component mount
-    handleResize();
-
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  
 
 
 
@@ -125,6 +112,21 @@ export default function CreateProject() {
       formErrors.location = "Location is required";
       isValid = false;
     }
+
+
+    
+    if(formData.startDate < formData.endDate){
+      console.log("less");
+      setNewerror(true);
+   
+    }
+    else{
+      console.log("greater");
+      isValid = false;
+      setNewerror(false);
+
+    }
+
 
     setErrors(formErrors);
     return isValid;
@@ -394,6 +396,19 @@ export default function CreateProject() {
                                         {errors.startDate}
                                       </div>
                                     )}
+
+                                  {
+                                     newerror
+                                     ? ""
+                                     :  <div
+                                     style={{ color: "red" }}
+                                     className="errorLine"
+                                   >
+                                     Start Date require Leass than End Date
+                                   </div>
+                                   }
+
+
                                   </div>
                                 </div>
 
@@ -460,6 +475,8 @@ export default function CreateProject() {
                                   <strong className="fw-bold">
                                     Registered
                                   </strong>
+
+                                 
                                 </div>
                               </div>
                             </div>

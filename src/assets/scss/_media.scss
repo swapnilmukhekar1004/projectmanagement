@@ -119,6 +119,10 @@
         font-size: 23px;
     }
 
+    .departmentWiseName{
+        font-size: 18px;
+    }
+
  
 
 
@@ -126,6 +130,16 @@
 
 
 @media (max-width:576px) {
+    .chartCard {
+        height: 334px !important;
+    }
+
+    .BarChartCard{
+        height: 200px !important;
+
+    }
+
+
 
     .SearchTable{
         background: none !important ;
